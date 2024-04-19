@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0f5c66dd8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="thumbnail">
+                <img src="img.jpg" alt="music-image" class="thumbnail-image">
+            </div>
+
+            <div class="song-info">
+                <div class="title">
+                    <h1>SONG TITLE</h1>
+                </div>
+                <div class="artist">
+                    <h4>ARTIST NAME</h4>
+                </div>
+            </div>
+
+            <audio  id="song">
+                <source src="01.flac" type="audio/flac">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="play-controll" >
+                <div id="backword-btn"><i class="fa-solid fa-backward"></i></div>
+
+                <div onclick="playPause()" id="play-btn"><i class="fa-solid fa-play"></i></div>
+
+                <div id="forword-btm"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
